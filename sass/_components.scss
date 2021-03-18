@@ -128,8 +128,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    // -webkit-animation: moveInBottom 1.5s;
-    // animation: moveInBottom 1.5s;
   }
 }
 
@@ -141,8 +139,13 @@
 
   grid-column: 1 / 3;
 
-  -webkit-animation: moveInBottom 1.5s;
-  animation: moveInBottom 1.5s;
+  -webkit-animation: moveInBottom 0.9s;
+
+          animation: moveInBottom 0.9s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 
   @media only screen and (max-width: $bp-largest) {
     width: 84%;
@@ -168,6 +171,8 @@
 .intro {
   grid-column: 1 / 3;
   z-index: 1;
+
+  overflow-x: hidden;
 
   @media only screen and (max-width: $bp-smallest) {
     display: none;
@@ -246,11 +251,11 @@
       grid-gap: 1.2rem;
     }
     @media only screen and (max-width: $bp-lowest) {
-      grid-gap: 1.1rem;
+      grid-gap: 1.9rem;
     }
     @media only screen and (max-width: $bp-lowestt) {
       padding: 0.5rem;
-      grid-gap: 1.1rem;
+      grid-gap: 1.9rem;
     }
   }
 }
@@ -307,10 +312,10 @@
   }
 
   @media only screen and (max-width: $bp-lowest) {
-    padding-top: 2.44rem;
+    padding-top: 2.6rem;
   }
   @media only screen and (max-width: $bp-lowestt) {
-    padding-top: 2.45rem;
+    padding-top: 3rem;
   }
 
   &__columns {
@@ -321,10 +326,10 @@
     align-items: start;
 
     @media only screen and (max-width: $bp-lowest) {
-      grid-gap: 1.6rem;
+      grid-gap: 2.1rem;
     }
     @media only screen and (max-width: $bp-lowestt) {
-      grid-gap: 2.4rem;
+      grid-gap: 3.9rem;
     }
   }
 
